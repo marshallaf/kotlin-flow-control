@@ -13,4 +13,4 @@ when (number) {
 ```
 Note that if `number` was `4`, it would satisfy two conditions. Because the case `in 4..6` comes before the case `in specialNumbers`, it will execute the path that prints `"It's either 4 or 5."`.
 
-[Back to start](../README.md) | [Forward to `for`](/for.md)
+[Back to start](/README.md) | [Forward to `for`](/control-operators/for.md)
