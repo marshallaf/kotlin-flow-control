@@ -50,4 +50,4 @@ val omeletteMessage = when {
 ```
 
 
-[Back to start](/README.md) | [Forward to `for`](/control-operators/for.md)
+[Back to `if`](/control-operators/if.md) | [Forward to `for`](/control-operators/for.md)
