@@ -19,4 +19,6 @@ for (i in collection.indices) {
 }
 ```
 
-[Back to `when`](/control-operators/when.md) | [Forward to ranges](/control-operators/ranges.md)
+`break` and `continue` are still around, and they behave the same as in Java.
+
+[Back to `when`](/control-operators/when.md) | [Forward to ranges](/compiler-magic/ranges.md)
