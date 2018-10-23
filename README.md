@@ -1,34 +1,6 @@
 # Flow control in Kotlin
 
----
-
-## if
-`if` works in mostly the same way as in Java, but it can now be used as an expression.
-
-### standard usage
-```kotlin
-if (weight > minimum) {
-  showMessage("It's too heavy.")
-} else { // not required in standard usage
-  showMessage("It's fine.")
-}
-```
-
-### as expression
-```kotlin
-val message = if (weight > minimum) {
-  "It's too heavy."
-} else { // required when used as expression
-  "It's fine."
-}
-```
-
-### in place of ternary
-```kotlin
-val message = if (weight > minimum) "It's too heavy." else "It's fine."
-```
-
----
+[Forward to `if`](/control-operators/if.md)
 
 ## when
 `when` is generally a replacement for `switch`, but the cases can be more varied, and the compiler helps when it can.
