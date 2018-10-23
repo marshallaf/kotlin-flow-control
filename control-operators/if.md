@@ -24,4 +24,4 @@ val message = if (weight > minimum) {
 val message = if (weight > minimum) "It's too heavy." else "It's fine."
 ```
 
-[Back to start](../README.md) | [Forward to `when`]()
+[Back to start](../README.md) | [Forward to `when`](/when.md)
