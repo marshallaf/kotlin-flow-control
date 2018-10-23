@@ -13,4 +13,41 @@ when (number) {
 ```
 Note that if `number` was `4`, it would satisfy two conditions. Because the case `in 4..6` comes before the case `in specialNumbers`, it will execute the path that prints `"It's either 4 or 5."`.
 
+`when` can also be used as an expression.
+```kotlin
+val omeletteMessage = when (egg) {
+  is OstrichEgg -> "The egg is too big for an omelette."
+  is QuailEgg -> "The egg is too small for an omelette."
+  else -> {
+    makeOmelette()
+    "The egg is perfect for an omelette!"
+  }
+}
+```
+
+Normally, `when` requires an `else` condition when used as an expression. However, if the compiler can prove that a `when`'s conditions are exhaustive, then the `else` condition can be omitted.
+```kotlin
+enum class Rsvp {
+  YES, 
+  YES_PLUS_ONE, 
+  NO
+}
+
+val response = when (rsvp) {
+  Rsvp.YES -> "See you there."
+  Rsvp.YES_PLUS_ONE -> "See you both there."
+  Rsvp.NO -> "Sorry you can't make it."
+}
+```
+
+`when` doesn't necessarily need an argument.
+```kotlin
+val omeletteMessage = when {
+  egg.weight > 5 -> "too big"
+  egg.weight < 1 -> "too small"
+  else -> "just right"
+}
+```
+
+
 [Back to start](/README.md) | [Forward to `for`](/control-operators/for.md)

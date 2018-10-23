@@ -13,7 +13,7 @@ if (weight > minimum) {
 ### as expression
 ```kotlin
 val message = if (weight > minimum) {
-  "It's too heavy."
+  "It's too heavy." // the last item in the block is the 'return' of the case
 } else { // required when used as an expression
   "It's fine."
 }
