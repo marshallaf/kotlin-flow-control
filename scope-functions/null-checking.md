@@ -25,3 +25,5 @@ Another way this is useful is for null-safe transformations:
 val distance = distanceString?.run { toDouble() } ?: 0.0
 ```
 Here, if `distanceString` is null, `.run()` is not invoked. Execution is passed to the right side of the elvis operator, assigning the default value of `0.0` to `distance`. 
+
+[Back to it-type scope functions](/scope-functions/it-type.md)
