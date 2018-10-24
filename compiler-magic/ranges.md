@@ -25,11 +25,11 @@ for (i in 152..252 step 2) {
 And they can be backwards:
 ```kotlin
 for (i in 251..150) {
-  // iterates over (251, 150)
+  // iterates over [251, 150]
 }
 
 for (i in 251 downTo 150) {
-  // iterates over (251, 150]
+  // iterates over [251, 150)
 }
 ```
 
