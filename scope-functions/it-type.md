@@ -14,7 +14,7 @@ class Chef {
     val breakfast = StringBuilder().let {
       it.append("egg made by Chef ") // it is the StringBuilder
       it.append(this.getName()) // this is the Chef
-      toString()
+      toString() // last line is the return value
     }
     return breakfast
   }
